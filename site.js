@@ -3,15 +3,24 @@
   var burger = document.querySelector('.nav-burger');
   var nav = document.querySelector('.nav');
   if (burger && nav) {
+    function closeMenu() {
+      nav.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
     burger.addEventListener('click', function (e) {
       e.stopPropagation();
       var open = nav.classList.toggle('open');
       burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
     });
+    var menuLinks = nav.querySelectorAll('.nav-links a');
+    for (var i = 0; i < menuLinks.length; i++) {
+      menuLinks[i].addEventListener('click', closeMenu);
+    }
     document.addEventListener('click', function (e) {
       if (nav.classList.contains('open') && !nav.contains(e.target)) {
-        nav.classList.remove('open');
-        burger.setAttribute('aria-expanded', 'false');
+        closeMenu();
       }
     });
   }
