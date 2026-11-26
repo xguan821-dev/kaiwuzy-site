@@ -103,6 +103,8 @@ footer a:hover{color:#fff}
 .top-bar{background:#ff7d1a;color:#fff;text-align:center;padding:8px 12px;font-size:13.5px;font-weight:600}
 .top-bar a{color:#fff;text-decoration:none}
 .top-bar a:hover{text-decoration:underline}
+.lang-switch{font-size:13px;font-weight:600;color:#444;border:1px solid #cfd9e3;border-radius:6px;padding:6px 12px;margin-right:10px;white-space:nowrap}
+.lang-switch:hover{color:#1890ff;border-color:#1890ff;text-decoration:none}
 .btn-ghost{background:transparent;border:2px solid rgba(255,255,255,.75);color:#fff;margin-left:10px}
 .btn-ghost:hover{background:rgba(255,255,255,.14);color:#fff}
 .hero-badges{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:26px}

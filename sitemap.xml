@@ -1,12 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.kaiwuzy.com/</loc><lastmod>2026-11-26</lastmod></url>
-  <url><loc>https://www.kaiwuzy.com/product-bone-saw</loc><lastmod>2026-11-26</lastmod></url>
-  <url><loc>https://www.kaiwuzy.com/product-bowl-chopper</loc><lastmod>2026-11-26</lastmod></url>
-  <url><loc>https://www.kaiwuzy.com/product-tumbler</loc><lastmod>2026-11-26</lastmod></url>
-  <url><loc>https://www.kaiwuzy.com/product-stuffer</loc><lastmod>2026-11-26</lastmod></url>
-  <url><loc>https://www.kaiwuzy.com/product-brush-washer</loc><lastmod>2026-11-26</lastmod></url>
-  <url><loc>https://www.kaiwuzy.com/about</loc><lastmod>2026-11-26</lastmod></url>
-  <url><loc>https://www.kaiwuzy.com/resources</loc><lastmod>2026-11-26</lastmod></url>
-  <url><loc>https://www.kaiwuzy.com/contact</loc><lastmod>2026-11-26</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.kaiwuzy.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/product-bone-saw</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/product-bone-saw"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/product-bone-saw"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/product-bone-saw"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/zh/product-bone-saw</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/product-bone-saw"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/product-bone-saw"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/product-bone-saw"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/product-bowl-chopper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/product-bowl-chopper"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/product-bowl-chopper"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/product-bowl-chopper"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/zh/product-bowl-chopper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/product-bowl-chopper"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/product-bowl-chopper"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/product-bowl-chopper"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/product-tumbler</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/product-tumbler"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/product-tumbler"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/product-tumbler"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/zh/product-tumbler</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/product-tumbler"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/product-tumbler"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/product-tumbler"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/product-stuffer</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/product-stuffer"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/product-stuffer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/product-stuffer"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/zh/product-stuffer</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/product-stuffer"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/product-stuffer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/product-stuffer"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/product-brush-washer</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/product-brush-washer"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/product-brush-washer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/product-brush-washer"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/zh/product-brush-washer</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/product-brush-washer"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/product-brush-washer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/product-brush-washer"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/about"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/about"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/zh/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/about"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/about"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/resources</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/resources"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/resources"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/zh/resources</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/resources"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/resources"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/contact"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/zh/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/contact"/>
+  </url>
 </urlset>
