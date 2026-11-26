@@ -15,7 +15,7 @@
 <section class="section alt"><div class="container">
 <h2>Send Your Inquiry</h2>
 <p class="sub">Tell us your raw material and target output — our engineer replies within 24 hours.</p>
-<form class="inq" action="mailto:sales07@kaiwuzy.com" method="POST" enctype="text/plain" onsubmit="return sendMail(this)">
+<form class="inq" id="inqForm">
 <div class="f-2col">
 <div class="f-row"><label>Name *</label><input name="name" required></div>
 <div class="f-row"><label>Country / Company</label><input name="country"></div>
@@ -34,20 +34,48 @@
 <option>Full processing line / other</option>
 </select></div>
 <div class="f-row"><label>Your material and target output *</label><textarea name="message" placeholder="e.g. Frozen pork ribs, 500 kg/h; potato washing line 2 t/h..." required></textarea></div>
+<div class="f-row" style="position:absolute;left:-9999px" aria-hidden="true"><label>Website</label><input name="website" tabindex="-1" autocomplete="off"></div>
 <div class="f-row"><label><input type="checkbox" name="agree" style="width:auto" required> I agree to be contacted about my inquiry.</label></div>
-<button class="btn" type="submit" style="width:100%">Send Inquiry</button>
+<button class="btn" type="submit" id="inqBtn" style="width:100%">Send Inquiry</button>
 <p style="font-size:12.5px;color:#889;margin-top:12px;text-align:center">Or email directly: <a href="mailto:sales07@kaiwuzy.com">sales07@kaiwuzy.com</a></p>
 </form>
+<div id="inqResult" style="display:none;padding:20px;border:1px solid #dde;border-radius:8px;background:#f6f9f6">
+<h3 id="inqResultTitle">Thank you!</h3>
+<p id="inqResultBody"></p>
+</div>
 <script>
-function sendMail(f){
-  var s='';
-  ['name','country','email','im','product','message'].forEach(function(k){
-    var el=f.querySelector('[name='+k+']'); if(el&&el.value) s+=k+': '+el.value+'\n';
+(function(){
+  var f=document.getElementById('inqForm'),b=document.getElementById('inqBtn'),r=document.getElementById('inqResult');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!f.checkValidity()){f.reportValidity();return;}
+    var p={submission_id:(crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random())};
+    ['name','country','email','im','product','message','website'].forEach(function(k){
+      var el=f.querySelector('[name='+k+']'); if(el) p[k]=el.value;
+    });
+    p.lang=(navigator.language||'').slice(0,10);
+    b.disabled=true;b.textContent='Sending...';
+    fetch('/api/inquiry',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(p)})
+    .then(function(res){return res.json().then(function(j){return {ok:res.ok,j:j};});})
+    .then(function(t){
+      f.style.display='none';r.style.display='block';
+      if(t.j&&t.j.success){
+        document.getElementById('inqResultTitle').textContent='Thank you! Your inquiry was received.';
+        document.getElementById('inqResultBody').innerHTML='Reference: <b>'+(t.j.ref||'-')+'</b><br>Our engineer will reply to <b>'+p.email+'</b> within 24 hours.';
+      }else{
+        document.getElementById('inqResultTitle').textContent='Submission failed';
+        document.getElementById('inqResultBody').innerHTML='Please email us directly: <a href="mailto:sales07@kaiwuzy.com">sales07@kaiwuzy.com</a>';
+      }
+      r.scrollIntoView({behavior:'smooth'});
+    })
+    .catch(function(){
+      f.style.display='none';r.style.display='block';
+      document.getElementById('inqResultTitle').textContent='Network error';
+      document.getElementById('inqResultBody').innerHTML='Please email us directly: <a href="mailto:sales07@kaiwuzy.com">sales07@kaiwuzy.com</a>';
+      r.scrollIntoView({behavior:'smooth'});
+    });
   });
-  s+='(sent from www.kaiwuzy.com)';
-  f.action='mailto:sales07@kaiwuzy.com?subject='+encodeURIComponent('Inquiry from '+((f.name.value||'website')+' - '+(f.product.value||'KW machine')))+'&body='+encodeURIComponent(s);
-  return true;
-}
+})();
 </script>
 </div></section>
 <footer><div class="container"><div class="copy">&copy; 2026 KaiWu ZhiYuan. <a href="mailto:sales07@kaiwuzy.com">sales07@kaiwuzy.com</a></div></div></footer>
