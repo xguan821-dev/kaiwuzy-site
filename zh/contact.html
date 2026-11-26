@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>联系与询盘 | KW 食品机械</title>
+<meta name="description" content="向 KW 食品机械发送询盘——工程师 24 小时内回复报价，支持 WhatsApp 与邮件。">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="canonical" href="https://www.kaiwuzy.com/zh/contact">
+<link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/contact">
+<link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/contact">
+<link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/contact">
+<meta property="og:title" content="联系与询盘 | KW 食品机械">
+<meta property="og:description" content="向 KW 食品机械发送询盘——工程师 24 小时内回复报价，支持 WhatsApp 与邮件。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.kaiwuzy.com/zh/contact">
+<meta property="og:site_name" content="KW 食品机械">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.kaiwuzy.com/zh/"}, {"@type": "ListItem", "position": 2, "name": "联系方式", "item": "https://www.kaiwuzy.com/zh/contact"}]}</script>
+</head>
+<body>
+<div class="top-bar"><a href="https://wa.me/8617606390669?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2KW%E9%A3%9F%E5%93%81%E5%8A%A0%E5%B7%A5%E6%9C%BA%E6%A2%B0%E3%80%82" target="_blank" rel="noopener">WhatsApp：+86 176 0639 0669 &middot; 欢迎咨询</a></div>
+<header><div class="container nav">
+<div class="logo">KW<span>.</span> 食品机械</div>
+<ul class="nav-links"><li><a href="index.html">首页</a></li><li><a href="index.html#products">产品</a></li><li><a href="resources.html">资料</a></li><li><a href="about.html">关于我们</a></li><li><a href="contact.html">询盘</a></li></ul>
+<a class="lang-switch" href="https://www.kaiwuzy.com/contact">EN</a>
+<a class="btn btn-wa chat-btn" href="https://wa.me/8617606390669?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2KW%E9%A3%9F%E5%93%81%E5%8A%A0%E5%B7%A5%E6%9C%BA%E6%A2%B0%E3%80%82" target="_blank" rel="noopener">咨询</a>
+    <button class="nav-burger" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    <a href="contact.html" class="btn">获取报价</a>
+</div></header>
+<div class="breadcrumb"><div class="container"><a href="index.html">首页</a> / 联系方式</div></div>
+<section class="section alt"><div class="container">
+<h2>发送询盘</h2>
+<p class="sub">告诉我们您的原料与目标产量——工程师 24 小时内回复。</p>
+<form class="inq" id="inqForm">
+<div class="f-2col">
+<div class="f-row"><label>姓名 *</label><input name="name" required></div>
+<div class="f-row"><label>国家 / 公司</label><input name="country"></div>
+</div>
+<div class="f-2col">
+<div class="f-row"><label>邮箱 *</label><input name="email" type="email" required></div>
+<div class="f-row"><label>WhatsApp / 微信</label><input name="im"></div>
+</div>
+<div class="f-row"><label>感兴趣的产品</label>
+<select name="product">
+<option>锯骨机</option>
+<option>斩拌机</option>
+<option>真空滚揉机</option>
+<option>灌肠机</option>
+<option>毛刷清洗机</option>
+<option>整线配置 / 其他</option>
+</select></div>
+<div class="f-row"><label>您的物料与目标产量 *</label><textarea name="message" placeholder="例：冻猪肋排 500 kg/h；土豆清洗线 2 t/h…" required></textarea></div>
+<div class="f-row" style="position:absolute;left:-9999px" aria-hidden="true"><label>Website</label><input name="website" tabindex="-1" autocomplete="off"></div>
+<div class="f-row"><label><input type="checkbox" name="agree" style="width:auto" required> 我同意就本次询盘与我联系。</label></div>
+<button class="btn" type="submit" id="inqBtn" style="width:100%">发送询盘</button>
+<p style="font-size:12.5px;color:#889;margin-top:12px;text-align:center">或直接发邮件：<a href="mailto:sales07@kaiwuzy.com">sales07@kaiwuzy.com</a></p>
+<p style="font-size:12.5px;color:#889;margin-top:6px;text-align:center">WhatsApp：<a href="https://wa.me/8617606390669" target="_blank" rel="noopener">+86 176 0639 0669</a></p>
+</form>
+<div id="inqResult" style="display:none;padding:20px;border:1px solid #dde;border-radius:8px;background:#f6f9f6">
+<h3 id="inqResultTitle">感谢！</h3>
+<p id="inqResultBody"></p>
+</div>
+<script>
+(function(){
+  var f=document.getElementById('inqForm'),b=document.getElementById('inqBtn'),r=document.getElementById('inqResult');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!f.checkValidity()){f.reportValidity();return;}
+    var p={submission_id:(crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random())};
+    ['name','country','email','im','product','message','website'].forEach(function(k){
+      var el=f.querySelector('[name='+k+']'); if(el) p[k]=el.value;
+    });
+    p.lang='zh-CN';
+    b.disabled=true;b.textContent='提交中…';
+    fetch('/api/inquiry',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(p)})
+    .then(function(res){return res.json().then(function(j){return {ok:res.ok,j:j};});})
+    .then(function(t){
+      f.style.display='none';r.style.display='block';
+      if(t.j&&t.j.success){
+        document.getElementById('inqResultTitle').textContent='感谢！我们已收到您的询盘。';
+        document.getElementById('inqResultBody').innerHTML='询盘编号：<b>'+(t.j.ref||'-')+'</b><br>工程师将在 24 小时内回复您的邮箱 <b>'+p.email+'</b>。';
+      }else{
+        document.getElementById('inqResultTitle').textContent='提交失败';
+        document.getElementById('inqResultBody').innerHTML='请直接发邮件：<a href="mailto:sales07@kaiwuzy.com">sales07@kaiwuzy.com</a>';
+      }
+      r.scrollIntoView({behavior:'smooth'});
+    })
+    .catch(function(){
+      f.style.display='none';r.style.display='block';
+      document.getElementById('inqResultTitle').textContent='网络错误';
+      document.getElementById('inqResultBody').innerHTML='请直接发邮件：<a href="mailto:sales07@kaiwuzy.com">sales07@kaiwuzy.com</a>';
+      r.scrollIntoView({behavior:'smooth'});
+    });
+  });
+})();
+</script>
+</div></section>
+<footer><div class="container"><div class="copy">&copy; 2026 开物致远. <a href="mailto:sales07@kaiwuzy.com">sales07@kaiwuzy.com</a></div></div></footer>
+
+<a class="wa-float" href="https://wa.me/8617606390669?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2KW%E9%A3%9F%E5%93%81%E5%8A%A0%E5%B7%A5%E6%9C%BA%E6%A2%B0%E3%80%82" target="_blank" rel="noopener" aria-label="WhatsApp 咨询"><svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M16 0C7.2 0 0 7.2 0 16c0 2.8.7 5.5 2.1 7.9L0 32l8.3-2.2c2.3 1.3 4.9 1.9 7.7 1.9 8.8 0 16-7.2 16-16S24.8 0 16 0zm0 29.2c-2.5 0-4.9-.7-7-1.9l-.5-.3-5 1.3 1.3-4.8-.3-.5c-1.4-2.2-2.1-4.7-2.1-7.3C2.4 8.5 8.5 2.4 16 2.4S29.6 8.5 29.6 16 23.5 29.2 16 29.2zm7.1-9.4c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.5-.2.3-.5.3-.9.1-.4-.2-1.7-.6-3.2-2-.9-.8-1.5-1.7-1.7-2.1-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.7.1-.3.1-.5 0-.7-.1-.2-.9-2.2-1.2-3-.3-.8-.7-.7-.9-.7h-.8c-.3 0-.7.1-1.1.5-.4.4-1.4 1.4-1.4 3.4s1.5 3.9 1.7 4.2c.2.3 2.9 4.4 7 6.2 1 .4 1.8.7 2.4.9 1 .3 1.9.3 2.6.2.8-.1 2.3-1 2.7-1.9.3-.9.3-1.7.2-1.9-.1-.2-.4-.3-.8-.5z"/></svg></a>
+<script src="../site.js"></script>
+</body>
+</html>
