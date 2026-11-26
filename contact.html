@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact / Inquiry | KW Food Machinery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="container nav">
+<div class="logo">KW<span>.</span> Food Machinery</div>
+<ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="index.html#products">Products</a></li><li><a href="resources.html">Resources</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Inquiry</a></li></ul>
+<a href="contact.html" class="btn">Get a Quote</a>
+</div></header>
+<div class="breadcrumb"><div class="container"><a href="index.html">Home</a> / Contact</div></div>
+<section class="section alt"><div class="container">
+<h2>Send Your Inquiry</h2>
+<p class="sub">Tell us your raw material and target output — our engineer replies within 24 hours.</p>
+<form class="inq" action="mailto:sales07@kaiwuzy.com" method="POST" enctype="text/plain" onsubmit="return sendMail(this)">
+<div class="f-2col">
+<div class="f-row"><label>Name *</label><input name="name" required></div>
+<div class="f-row"><label>Country / Company</label><input name="country"></div>
+</div>
+<div class="f-2col">
+<div class="f-row"><label>Email *</label><input name="email" type="email" required></div>
+<div class="f-row"><label>WhatsApp / WeChat</label><input name="im"></div>
+</div>
+<div class="f-row"><label>Product of interest</label>
+<select name="product">
+<option>Bone Saw Machine</option>
+<option>Bowl Cutter / Chopper</option>
+<option>Vacuum Tumbler</option>
+<option>Sausage Stuffer</option>
+<option>Brush Washing Machine</option>
+<option>Full processing line / other</option>
+</select></div>
+<div class="f-row"><label>Your material and target output *</label><textarea name="message" placeholder="e.g. Frozen pork ribs, 500 kg/h; potato washing line 2 t/h..." required></textarea></div>
+<div class="f-row"><label><input type="checkbox" name="agree" style="width:auto" required> I agree to be contacted about my inquiry.</label></div>
+<button class="btn" type="submit" style="width:100%">Send Inquiry</button>
+<p style="font-size:12.5px;color:#889;margin-top:12px;text-align:center">Or email directly: <a href="mailto:sales07@kaiwuzy.com">sales07@kaiwuzy.com</a></p>
+</form>
+<script>
+function sendMail(f){
+  var s='';
+  ['name','country','email','im','product','message'].forEach(function(k){
+    var el=f.querySelector('[name='+k+']'); if(el&&el.value) s+=k+': '+el.value+'\n';
+  });
+  s+='(sent from www.kaiwuzy.com)';
+  f.action='mailto:sales07@kaiwuzy.com?subject='+encodeURIComponent('Inquiry from '+((f.name.value||'website')+' - '+(f.product.value||'KW machine')))+'&body='+encodeURIComponent(s);
+  return true;
+}
+</script>
+</div></section>
+<footer><div class="container"><div class="copy">&copy; 2026 KaiWu ZhiYuan. <a href="mailto:sales07@kaiwuzy.com">sales07@kaiwuzy.com</a></div></div></footer>
+</body>
+</html>

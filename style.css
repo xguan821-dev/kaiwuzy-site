@@ -1,0 +1,63 @@
+/* KW Food Machinery - Site v0 Styles */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,Arial,sans-serif;color:#1a1a2e;line-height:1.6;background:#fff}
+a{color:#1890ff;text-decoration:none}
+.container{max-width:1150px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:26px;font-weight:800;color:#1a1a2e}
+.logo span{color:#1890ff}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:#444;font-weight:600;font-size:14.5px}
+.nav-links a:hover{color:#1890ff}
+.btn{display:inline-block;background:#1890ff;color:#fff;padding:11px 26px;border-radius:6px;font-weight:600;font-size:15px;border:0;cursor:pointer}
+.btn:hover{background:#40a9ff}
+.btn-outline{background:transparent;color:#1890ff;border:2px solid #1890ff}
+.hero{background:linear-gradient(135deg,#0f2744 0%,#164a7a 60%,#1890ff 140%);color:#fff;padding:90px 0 80px;text-align:center}
+.hero h1{font-size:42px;margin-bottom:16px}
+.hero p{font-size:19px;color:#cfe3f5;max-width:680px;margin:0 auto 32px}
+.section{padding:70px 0}
+.section.alt{background:#f5f8fb}
+.section h2{font-size:30px;text-align:center;margin-bottom:12px}
+.section .sub{text-align:center;color:#667;font-size:16px;margin-bottom:44px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:#fff;border:1px solid #e8eef4;border-radius:10px;overflow:hidden;transition:.2s}
+.card:hover{box-shadow:0 8px 24px rgba(24,144,255,.15);transform:translateY(-3px)}
+.card .thumb{height:190px;background:linear-gradient(160deg,#dfe9f2,#c6d8e8);display:flex;align-items:center;justify-content:center;color:#7a93a8;font-size:13px;font-weight:600;text-align:center;padding:14px}
+.card .body{padding:20px 22px}
+.card h3{font-size:18px;margin-bottom:8px}
+.card p{font-size:13.5px;color:#5a6a7a;margin-bottom:14px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.feat{background:#fff;padding:26px 22px;border-radius:10px;border:1px solid #e8eef4;text-align:center}
+.feat .ico{font-size:30px;margin-bottom:10px}
+.feat h4{font-size:16px;margin-bottom:8px}
+.feat p{font-size:13px;color:#5a6a7a}
+table.spec{width:100%;border-collapse:collapse;margin:26px 0;font-size:14.5px}
+table.spec th{background:#f0f6fb;text-align:left;padding:11px 14px;border:1px solid #e2ebf3;width:38%}
+table.spec td{padding:11px 14px;border:1px solid #e2ebf3;color:#445}
+table.spec td .tbd{color:#b00;font-size:12px}
+.breadcrumb{background:#f5f8fb;padding:14px 0;font-size:13.5px;color:#778}
+.pd{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.pd .img{height:340px;background:linear-gradient(160deg,#dfe9f2,#c6d8e8);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#7a93a8;font-weight:600;text-align:center;padding:20px}
+.pd h1{font-size:30px;margin-bottom:14px}
+.pd .desc{color:#5a6a7a;margin-bottom:18px}
+.pd ul{margin:0 0 24px 20px;color:#445;font-size:14.5px}
+.pd ul li{margin-bottom:7px}
+.cta-band{background:#0f2744;color:#fff;text-align:center;padding:54px 0}
+.cta-band h2{margin-bottom:10px}
+.cta-band p{color:#9fb8d4;margin-bottom:24px}
+form.inq{max-width:640px;margin:0 auto;background:#fff;padding:36px;border-radius:12px;border:1px solid #e5ecf2}
+.f-row{margin-bottom:18px}
+.f-row label{display:block;font-weight:600;font-size:13.5px;margin-bottom:6px}
+.f-row input,.f-row select,.f-row textarea{width:100%;padding:11px 12px;border:1px solid #cfd9e3;border-radius:6px;font-size:14.5px;font-family:inherit}
+.f-row textarea{min-height:110px;resize:vertical}
+.f-2col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+footer{background:#101c2c;color:#8ea4bd;padding:44px 0 26px;font-size:13.5px}
+footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px;margin-bottom:28px}
+footer h4{color:#fff;font-size:15px;margin-bottom:12px}
+footer a{color:#8ea4bd;display:block;margin-bottom:7px}
+footer a:hover{color:#fff}
+.copy{border-top:1px solid #22334a;padding-top:18px;text-align:center;color:#5d748d;font-size:12.5px}
+.note-tbd{background:#fff7e6;border:1px solid #ffd666;color:#874d00;padding:10px 14px;border-radius:6px;font-size:13px;margin:14px 0}
+@media(max-width:900px){.grid,.features{grid-template-columns:repeat(2,1fr)}.pd{grid-template-columns:1fr}footer .cols{grid-template-columns:1fr 1fr}.f-2col{grid-template-columns:1fr}}
+@media(max-width:560px){.grid,.features{grid-template-columns:1fr}.nav-links{display:none}.hero h1{font-size:30px}}
