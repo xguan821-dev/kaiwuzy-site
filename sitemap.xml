@@ -37,6 +37,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/product-vertical-retort"/>
   </url>
   <url>
+    <loc>https://www.kaiwuzy.com/product-weight-sorter</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/product-weight-sorter"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/product-weight-sorter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/product-weight-sorter"/>
+  </url>
+  <url>
+    <loc>https://www.kaiwuzy.com/zh/product-weight-sorter</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/product-weight-sorter"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/product-weight-sorter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kaiwuzy.com/product-weight-sorter"/>
+  </url>
+  <url>
     <loc>https://www.kaiwuzy.com/solutions</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kaiwuzy.com/solutions"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://www.kaiwuzy.com/zh/solutions"/>
