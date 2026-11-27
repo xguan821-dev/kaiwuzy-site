@@ -43,6 +43,23 @@ table.spec td .tbd{color:#b00;font-size:12px}
 .pd .desc{color:#5a6a7a;margin-bottom:18px}
 .pd ul{margin:0 0 24px 20px;color:#445;font-size:14.5px}
 .pd ul li{margin-bottom:7px}
+/* Product media components (T2 template, shared by all product pages) */
+.pd .pd-photo{height:auto;background:#fff;border:1px solid #e2ebf3;padding:0}
+.pd .pd-photo img{width:100%;height:auto;display:block;border-radius:10px}
+.video-wrap{max-width:800px;margin:0 auto}
+video.pd-video{width:100%;display:block;border-radius:10px;background:#0b1524}
+.spec-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;margin-top:26px}
+.spec-grid img.spec-img{width:100%;max-width:420px;height:auto;display:block;border-radius:10px;border:1px solid #e2ebf3;margin:0}
+.pd .pd-sub{color:#5a6a7a;font-size:14px;margin:-6px 0 16px}
+/* Solutions line cards (L1, shared by /solutions two languages) */
+.card{background:#fff;border:1px solid #e2ebf3;border-radius:10px;padding:22px 24px;margin-top:22px}
+.card h3{font-size:19px;margin:0 0 10px}
+.card .btn{margin-top:6px}
+.badge{display:inline-block;font-size:12px;font-weight:600;color:#0a5fa3;background:#e8f1fa;border-radius:999px;padding:3px 10px;margin-left:8px;vertical-align:middle;white-space:nowrap}
+.line-groups{font-size:14px;color:#5a6a7a;margin:18px 0 0}
+.card img.line-photo{width:100%;height:auto;display:block;border-radius:8px;border:1px solid #e2ebf3;margin:12px 0}
+p.line-caption{font-size:13px;color:#8aa0b5;margin:0 0 10px}
+.line-groups a{white-space:nowrap}
 .cta-band{background:#0f2744;color:#fff;text-align:center;padding:54px 0}
 .cta-band h2{margin-bottom:10px}
 .cta-band p{color:#9fb8d4;margin-bottom:24px}
@@ -59,7 +76,7 @@ footer a{color:#8ea4bd;display:block;margin-bottom:7px}
 footer a:hover{color:#fff}
 .copy{border-top:1px solid #22334a;padding-top:18px;text-align:center;color:#5d748d;font-size:12.5px}
 .note-tbd{background:#fff7e6;border:1px solid #ffd666;color:#874d00;padding:10px 14px;border-radius:6px;font-size:13px;margin:14px 0}
-@media(max-width:900px){.grid,.features{grid-template-columns:repeat(2,1fr)}.pd{grid-template-columns:1fr}footer .cols{grid-template-columns:1fr 1fr}.f-2col{grid-template-columns:1fr}}
+@media(max-width:900px){.grid,.features{grid-template-columns:repeat(2,1fr)}.pd{grid-template-columns:1fr}.spec-grid{grid-template-columns:1fr}footer .cols{grid-template-columns:1fr 1fr}.f-2col{grid-template-columns:1fr}}
 @media(max-width:560px){.grid,.features{grid-template-columns:1fr}.hero h1{font-size:30px}}
 
 /* WhatsApp buttons */
